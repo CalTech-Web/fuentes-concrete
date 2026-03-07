@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Phone, MapPin, Building2 } from "lucide-react";
 
 const serviceAreas = [
@@ -15,8 +16,17 @@ const serviceAreas = [
 
 export default function Contractors() {
   return (
-    <section id="services" className="py-20 sm:py-28 bg-charcoal-light">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section id="services" className="relative py-20 sm:py-28 overflow-hidden">
+      {/* Background image */}
+      <Image
+        src="/images/bg1.png"
+        alt=""
+        fill
+        className="object-cover opacity-10"
+      />
+      <div className="absolute inset-0 bg-charcoal-light/95" />
+
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-lime font-semibold uppercase tracking-widest text-sm mb-3">
@@ -67,6 +77,16 @@ export default function Contractors() {
                   </span>
                 ))}
               </div>
+            </div>
+
+            {/* Company sign image */}
+            <div className="mt-6 relative aspect-video rounded-2xl overflow-hidden border border-white/10">
+              <Image
+                src="/images/fuentes-company.png"
+                alt="Fuentes Concrete Inc. company sign at job site"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>

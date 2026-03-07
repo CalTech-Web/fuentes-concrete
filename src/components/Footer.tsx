@@ -7,9 +7,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Company */}
           <div>
-            <h3 className="text-lg font-bold mb-4">
-              Fuentes <span className="text-lime">Concrete</span>
-            </h3>
+            <img
+              src="/images/logo.png"
+              alt="Fuentes Concrete Inc."
+              className="h-10 w-auto mb-4"
+            />
             <p className="text-white/50 text-sm leading-relaxed">
               Family owned and operated located in Madera, California.
               Servicing the Central Valley in custom concrete work. We serve

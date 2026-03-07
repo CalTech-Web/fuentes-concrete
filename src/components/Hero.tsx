@@ -2,12 +2,20 @@ import { Phone, ArrowDown } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-charcoal-dark via-charcoal to-charcoal-light overflow-hidden">
-      {/* Decorative background pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-lime rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-lime rounded-full blur-3xl" />
-      </div>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Video */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="/images/fuentes-home-video.mp4" type="video/mp4" />
+      </video>
+
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/70" />
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center">
         <p className="text-lime font-semibold uppercase tracking-widest text-sm mb-6">

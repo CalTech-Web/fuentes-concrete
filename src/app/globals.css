@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-charcoal: #1a1a1a;
+  --color-charcoal-dark: #111111;
+  --color-charcoal-light: #2a2a2a;
+  --color-lime: #a6ce39;
+  --color-lime-light: #b8da5e;
+  --color-lime-dark: #8fb52e;
+  --color-off-white: #f5f5f5;
+  --font-sans: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: var(--color-charcoal);
+  color: #ffffff;
+  font-family: var(--font-sans), system-ui, sans-serif;
+}

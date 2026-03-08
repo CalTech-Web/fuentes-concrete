@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeroPattern() {
   return (
-    <div className="absolute top-1/2 right-8 -translate-y-1/2 w-[40%] max-w-[400px] aspect-square pointer-events-none">
+    <div className="absolute top-1/2 right-8 -translate-y-1/2 w-[50%] max-w-[500px] aspect-square pointer-events-none">
       <Image
         src="/images/hero-hardhat.png"
         alt=""

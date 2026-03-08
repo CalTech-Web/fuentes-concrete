@@ -8,12 +8,8 @@ const images = [
   { src: "/images/patio-pool-deck.jpg", alt: "Patio and pool deck project" },
   { src: "/images/g1.jpg", alt: "Stamped concrete project" },
   { src: "/images/foundation.jpg", alt: "Concrete foundation project" },
-  { src: "/images/g3.jpg", alt: "Decorative concrete work" },
   { src: "/images/retaining-wall.jpg", alt: "Retaining wall project" },
   { src: "/images/cta-project.jpg", alt: "Concrete slab with steps" },
-  { src: "/images/g2.jpg", alt: "Sidewalk and walkway project" },
-  { src: "/images/g4.jpg", alt: "Commercial concrete project" },
-  { src: "/images/hiring-pic.png", alt: "Concrete patio project" },
 ];
 
 export default function InstagramFeed() {
@@ -41,7 +37,7 @@ export default function InstagramFeed() {
           {[...images, ...images].map((img, i) => (
             <div
               key={i}
-              className="relative shrink-0 w-72 sm:w-80 md:w-96 aspect-square mx-2 rounded-2xl overflow-hidden border border-white/10"
+              className="relative shrink-0 w-56 sm:w-64 md:w-72 aspect-square mx-2 rounded-2xl overflow-hidden border border-white/10"
             >
               <Image
                 src={img.src}

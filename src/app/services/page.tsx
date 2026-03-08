@@ -83,29 +83,50 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 sm:py-24 bg-lime">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-charcoal-dark mb-4">
-            Not Sure Which Service You Need?
-          </h2>
-          <p className="text-charcoal-dark/70 text-lg mb-8">
-            Give us a call and we will help you figure out the best approach for
-            your project. Free estimates for all residential and commercial work.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a
-              href="tel:5596736444"
-              className="inline-flex items-center justify-center gap-2 bg-charcoal-dark text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-charcoal transition-colors"
-            >
-              <Phone className="h-5 w-5" />
-              Call (559) 673-6444
-            </a>
-            <Link
-              href="/#contact"
-              className="inline-flex items-center justify-center gap-2 border-2 border-charcoal-dark text-charcoal-dark px-8 py-4 rounded-xl text-lg font-semibold hover:bg-charcoal-dark hover:text-white transition-colors"
-            >
-              Contact Us Online
-            </Link>
+      <section className="relative py-20 sm:py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-charcoal-dark via-charcoal-dark/95 to-charcoal-dark/70" />
+        <Image
+          src="/images/cta-project.jpg"
+          alt="Concrete project by Fuentes Concrete"
+          fill
+          className="object-cover -z-10"
+        />
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="relative aspect-square rounded-2xl overflow-hidden border border-white/10 hidden lg:block">
+              <Image
+                src="/images/cta-project.jpg"
+                alt="Fresh concrete slab with steps by Fuentes Concrete"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+                Not Sure Which Service{" "}
+                <span className="text-lime">You Need?</span>
+              </h2>
+              <p className="text-white/70 text-lg mb-8">
+                Give us a call and we will help you figure out the best approach
+                for your project. Free estimates for all residential and
+                commercial work.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="tel:5596736444"
+                  className="inline-flex items-center justify-center gap-2 bg-lime text-charcoal-dark px-8 py-4 rounded-xl text-lg font-bold hover:bg-lime-light transition-colors"
+                >
+                  <Phone className="h-5 w-5" />
+                  Call (559) 673-6444
+                </a>
+                <Link
+                  href="/#contact"
+                  className="inline-flex items-center justify-center gap-2 border-2 border-white/30 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:border-lime hover:text-lime transition-colors"
+                >
+                  Contact Us Online
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -197,7 +197,7 @@ export const services: Service[] = [
     title: "Retaining Walls",
     shortDescription:
       "Engineered concrete retaining walls that manage slopes, prevent erosion, and add structure to your property.",
-    image: "/images/g4.jpg",
+    image: "/images/retaining-wall.jpg",
     metaTitle: "Concrete Retaining Walls Madera & Fresno CA | Fuentes Concrete Inc.",
     metaDescription:
       "Concrete retaining wall construction in Madera, Fresno & Central Valley. Gravity, cantilever & decorative walls. 25+ years experience. Call (559) 673-6444.",

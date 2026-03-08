@@ -74,13 +74,6 @@ export default async function ServicePage({ params }: Props) {
 
       {/* Hero */}
       <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-28 bg-charcoal-dark overflow-hidden">
-        <Image
-          src={service.image}
-          alt={service.title}
-          fill
-          className="object-cover opacity-15"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-charcoal-dark/60 via-charcoal-dark/85 to-charcoal-dark" />
         <HeroPattern />
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="text-lime font-semibold uppercase tracking-widest text-sm mb-4">

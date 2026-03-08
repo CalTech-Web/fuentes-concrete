@@ -2,22 +2,23 @@ import { Phone, ArrowDown } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-charcoal-dark">
       {/* Background Video */}
       <video
         autoPlay
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover"
+        poster="/images/fuentes-company.png"
+        className="absolute inset-0 z-0 w-full h-full object-cover"
       >
         <source src="/images/fuentes-home-video.mp4" type="video/mp4" />
       </video>
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/70" />
+      <div className="absolute inset-0 z-[1] bg-black/70" />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center">
+      <div className="relative z-[2] mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center">
         <p className="text-lime font-semibold uppercase tracking-widest text-sm mb-6">
           Family Owned & Operated
         </p>
@@ -49,7 +50,7 @@ export default function Hero() {
 
       <a
         href="#about"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/30 hover:text-lime transition-colors animate-bounce"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-[2] text-white/30 hover:text-lime transition-colors animate-bounce"
       >
         <ArrowDown className="h-6 w-6" />
       </a>

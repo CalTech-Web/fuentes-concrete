@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, X, Phone, ChevronDown } from "lucide-react";
+import { Menu, X, Phone, ChevronDown, Facebook, Instagram } from "lucide-react";
 import { services } from "@/lib/services";
 
 const serviceLinks = services.map((s) => ({
@@ -82,7 +82,25 @@ export default function Header() {
             )}
           </nav>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
+            <a
+              href="https://www.facebook.com/fuentesconcreteinc"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:inline-flex items-center justify-center text-white/50 hover:text-lime transition-colors"
+              aria-label="Facebook"
+            >
+              <Facebook className="h-5 w-5" />
+            </a>
+            <a
+              href="https://www.instagram.com/fuentesconcreteinc"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:inline-flex items-center justify-center text-white/50 hover:text-lime transition-colors"
+              aria-label="Instagram"
+            >
+              <Instagram className="h-5 w-5" />
+            </a>
             <a
               href="tel:5596736444"
               className="hidden sm:inline-flex items-center gap-2 bg-lime text-charcoal-dark px-4 py-2 rounded-lg text-sm font-semibold hover:bg-lime-light transition-colors"
@@ -165,6 +183,25 @@ export default function Header() {
                 </Link>
               )
             )}
+            {/* Mobile social links */}
+            <div className="flex items-center gap-4 px-3 pt-3 mt-2 border-t border-white/10">
+              <a
+                href="https://www.facebook.com/fuentesconcreteinc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/50 hover:text-lime transition-colors"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
+              <a
+                href="https://www.instagram.com/fuentesconcreteinc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/50 hover:text-lime transition-colors"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+            </div>
           </nav>
         </div>
       )}

@@ -1,9 +1,9 @@
 import Hero from "@/components/Hero";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Contractors from "@/components/Contractors";
-import Gallery from "@/components/Gallery";
 import Hiring from "@/components/Hiring";
 import ContactSection from "@/components/ContactSection";
+import InstagramFeed from "@/components/InstagramFeed";
 
 export default function Home() {
   return (
@@ -11,9 +11,9 @@ export default function Home() {
       <Hero />
       <WhyChooseUs />
       <Contractors />
-      <Gallery />
       <Hiring />
       <ContactSection />
+      <InstagramFeed />
     </>
   );
 }

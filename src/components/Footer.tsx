@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Phone, Printer, MapPin } from "lucide-react";
+import { Phone, Printer, MapPin, Facebook, Instagram } from "lucide-react";
 import { services } from "@/lib/services";
 
 export default function Footer() {
@@ -96,6 +96,30 @@ export default function Footer() {
                 <br />
                 Madera, CA 93637, USA
               </p>
+
+              <div className="pt-4 mt-4 border-t border-white/10">
+                <p className="text-white/80 text-sm font-semibold mb-2">Follow Us</p>
+                <div className="flex items-center gap-3">
+                  <a
+                    href="https://www.facebook.com/fuentesconcreteinc"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white/60 hover:text-lime transition-colors"
+                    aria-label="Facebook"
+                  >
+                    <Facebook className="h-5 w-5" />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/fuentesconcreteinc"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white/60 hover:text-lime transition-colors"
+                    aria-label="Instagram"
+                  >
+                    <Instagram className="h-5 w-5" />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

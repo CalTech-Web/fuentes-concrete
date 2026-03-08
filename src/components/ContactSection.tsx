@@ -1,6 +1,6 @@
 "use client";
 
-import { Phone, Printer, MapPin, Send } from "lucide-react";
+import { Phone, Printer, MapPin, Send, Facebook, Instagram } from "lucide-react";
 
 export default function ContactSection() {
   return (
@@ -116,6 +116,28 @@ export default function ContactSection() {
                     Madera, CA 93637, USA
                   </p>
                 </div>
+              </div>
+            </div>
+
+            <div className="bg-charcoal rounded-2xl p-6 border border-white/10">
+              <h3 className="font-bold mb-3">Follow Us</h3>
+              <div className="flex items-center gap-4">
+                <a
+                  href="https://www.facebook.com/fuentesconcreteinc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center w-10 h-10 bg-lime/10 rounded-xl text-lime hover:bg-lime/20 transition-colors"
+                >
+                  <Facebook className="h-5 w-5" />
+                </a>
+                <a
+                  href="https://www.instagram.com/fuentesconcreteinc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center w-10 h-10 bg-lime/10 rounded-xl text-lime hover:bg-lime/20 transition-colors"
+                >
+                  <Instagram className="h-5 w-5" />
+                </a>
               </div>
             </div>
           </div>

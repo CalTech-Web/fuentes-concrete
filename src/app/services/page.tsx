@@ -56,12 +56,12 @@ export default function ServicesPage() {
                 href={`/services/${service.slug}`}
                 className="group bg-charcoal-light rounded-2xl overflow-hidden border border-white/10 hover:border-lime/30 transition-colors"
               >
-                <div className="relative aspect-[16/10] overflow-hidden bg-charcoal">
+                <div className="relative aspect-[16/10] overflow-hidden">
                   <Image
                     src={service.image}
                     alt={service.title}
                     fill
-                    className="object-contain transition-transform duration-500 group-hover:scale-105"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 </div>

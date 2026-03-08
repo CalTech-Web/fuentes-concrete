@@ -264,12 +264,12 @@ export default async function ServicePage({ params }: Props) {
                 href={`/services/${s.slug}`}
                 className="group bg-charcoal-light rounded-2xl overflow-hidden border border-white/10 hover:border-lime/30 transition-colors"
               >
-                <div className="relative aspect-[16/10] overflow-hidden bg-charcoal">
+                <div className="relative aspect-[16/10] overflow-hidden">
                   <Image
                     src={s.image}
                     alt={s.title}
                     fill
-                    className="object-contain transition-transform duration-500 group-hover:scale-105"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-5">

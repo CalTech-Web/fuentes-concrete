@@ -1,6 +1,6 @@
 "use client";
 
-import { Phone, Printer, MapPin, Send, Facebook, Instagram } from "lucide-react";
+import { Phone, Printer, MapPin, Mail, Clock, Send, Facebook, Instagram } from "lucide-react";
 
 export default function ContactSection() {
   return (
@@ -106,6 +106,23 @@ export default function ContactSection() {
             <div className="bg-charcoal rounded-2xl p-6 border border-white/10">
               <div className="flex items-start gap-4">
                 <div className="inline-flex items-center justify-center w-10 h-10 bg-lime/10 rounded-xl shrink-0">
+                  <Mail className="h-5 w-5 text-lime" />
+                </div>
+                <div>
+                  <h3 className="font-bold mb-1">Email</h3>
+                  <a
+                    href="mailto:fcinc17@gmail.com"
+                    className="text-white/60 hover:text-lime transition-colors"
+                  >
+                    fcinc17@gmail.com
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-charcoal rounded-2xl p-6 border border-white/10">
+              <div className="flex items-start gap-4">
+                <div className="inline-flex items-center justify-center w-10 h-10 bg-lime/10 rounded-xl shrink-0">
                   <MapPin className="h-5 w-5 text-lime" />
                 </div>
                 <div>
@@ -114,6 +131,24 @@ export default function ContactSection() {
                     2370 W Cleveland Ave Ste. 108 #141
                     <br />
                     Madera, CA 93637, USA
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-charcoal rounded-2xl p-6 border border-white/10">
+              <div className="flex items-start gap-4">
+                <div className="inline-flex items-center justify-center w-10 h-10 bg-lime/10 rounded-xl shrink-0">
+                  <Clock className="h-5 w-5 text-lime" />
+                </div>
+                <div>
+                  <h3 className="font-bold mb-1">Business Hours</h3>
+                  <p className="text-white/60 text-sm">
+                    Mon – Thu: 9:00 AM – 4:00 PM
+                    <br />
+                    Friday: 9:00 AM – 2:00 PM
+                    <br />
+                    Sat – Sun: Closed
                   </p>
                 </div>
               </div>

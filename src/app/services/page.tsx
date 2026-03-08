@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Phone, ArrowRight } from "lucide-react";
 import { services } from "@/lib/services";
+import HeroPattern from "@/components/HeroPattern";
 
 export const metadata: Metadata = {
   title: "Concrete Services Madera & Central Valley CA | Fuentes Concrete Inc.",
@@ -21,8 +22,9 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-20 sm:pt-40 sm:pb-28 bg-charcoal-dark">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-28 bg-charcoal-dark overflow-hidden">
+        <HeroPattern />
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="text-lime font-semibold uppercase tracking-widest text-sm mb-4">
             What We Do
           </p>

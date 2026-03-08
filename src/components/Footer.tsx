@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Phone, Printer, MapPin, Facebook, Instagram } from "lucide-react";
+import { Phone, Printer, MapPin, Mail, Facebook, Instagram } from "lucide-react";
 import { services } from "@/lib/services";
 
 export default function Footer() {
@@ -90,6 +90,13 @@ export default function Footer() {
                 <Printer className="h-4 w-4 text-lime" />
                 (559) 674-0377
               </p>
+              <a
+                href="mailto:fcinc17@gmail.com"
+                className="flex items-center gap-2 text-white/80 hover:text-lime text-sm transition-colors"
+              >
+                <Mail className="h-4 w-4 text-lime" />
+                fcinc17@gmail.com
+              </a>
               <p className="flex items-start gap-2 text-white/80 text-sm">
                 <MapPin className="h-4 w-4 text-lime shrink-0 mt-0.5" />
                 2370 W Cleveland Ave Ste. 108 #141

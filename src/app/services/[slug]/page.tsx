@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Phone, MapPin, CheckCircle2, ArrowRight } from "lucide-react";
 import { services, getServiceBySlug, SERVICE_AREAS } from "@/lib/services";
+import HeroPattern from "@/components/HeroPattern";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -77,9 +78,10 @@ export default async function ServicePage({ params }: Props) {
           src={service.image}
           alt={service.title}
           fill
-          className="object-cover opacity-20"
+          className="object-cover opacity-15"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-charcoal-dark/80 to-charcoal-dark" />
+        <div className="absolute inset-0 bg-gradient-to-b from-charcoal-dark/60 via-charcoal-dark/85 to-charcoal-dark" />
+        <HeroPattern />
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="text-lime font-semibold uppercase tracking-widest text-sm mb-4">
             Our Services

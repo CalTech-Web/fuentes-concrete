@@ -55,6 +55,21 @@ const jsonLd = {
   url: "https://fuentes-concrete.vercel.app",
   telephone: "(559) 673-6444",
   faxNumber: "(559) 674-0377",
+  email: "fcinc17@gmail.com",
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
+      opens: "09:00",
+      closes: "16:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: "Friday",
+      opens: "09:00",
+      closes: "14:00",
+    },
+  ],
   address: {
     "@type": "PostalAddress",
     streetAddress: "2370 W Cleveland Ave Ste. 108 #141",

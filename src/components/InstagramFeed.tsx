@@ -44,6 +44,8 @@ export default function InstagramFeed() {
                 alt={img.alt}
                 fill
                 className="object-cover transition-transform duration-500 hover:scale-110"
+                loading="lazy"
+                sizes="(max-width: 640px) 224px, (max-width: 768px) 256px, 288px"
               />
               <div className="absolute inset-0 bg-black/20 hover:bg-black/0 transition-colors" />
             </div>

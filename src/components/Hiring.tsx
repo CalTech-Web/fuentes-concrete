@@ -43,6 +43,8 @@ export default function Hiring() {
               alt="Custom decorative concrete patio work by Fuentes Concrete"
               fill
               className="object-cover"
+              loading="lazy"
+              sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
         </div>

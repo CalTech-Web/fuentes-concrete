@@ -99,12 +99,12 @@ export default function Footer() {
 
               <div className="pt-4 mt-4 border-t border-white/10">
                 <p className="text-white/80 text-sm font-semibold mb-2">Follow Us</p>
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-1">
                   <a
                     href="https://www.facebook.com/fuentesconcreteinc"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white/60 hover:text-lime transition-colors"
+                    className="p-2 text-white/60 hover:text-lime transition-colors"
                     aria-label="Facebook"
                   >
                     <Facebook className="h-5 w-5" />
@@ -113,7 +113,7 @@ export default function Footer() {
                     href="https://www.instagram.com/fuentesconcreteinc"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white/60 hover:text-lime transition-colors"
+                    className="p-2 text-white/60 hover:text-lime transition-colors"
                     aria-label="Instagram"
                   >
                     <Instagram className="h-5 w-5" />

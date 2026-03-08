@@ -23,6 +23,8 @@ export default function Contractors() {
         alt=""
         fill
         className="object-cover opacity-10"
+        loading="lazy"
+        sizes="100vw"
       />
       <div className="absolute inset-0 bg-charcoal-light/95" />
 
@@ -86,6 +88,8 @@ export default function Contractors() {
                 alt="Fuentes Concrete Inc. company sign at job site"
                 fill
                 className="object-cover"
+                loading="lazy"
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
           </div>

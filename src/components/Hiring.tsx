@@ -1,7 +1,12 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
-import { Phone, HardHat } from "lucide-react";
+import { Phone, HardHat, X } from "lucide-react";
 
 export default function Hiring() {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+
   return (
     <section id="hiring" className="py-20 sm:py-28 bg-charcoal relative overflow-hidden">
       {/* Lime accent strip */}
@@ -37,7 +42,10 @@ export default function Hiring() {
             </a>
           </div>
 
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10">
+          <button
+            onClick={() => setLightboxOpen(true)}
+            className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 cursor-zoom-in"
+          >
             <Image
               src="/images/hiring-pic.png"
               alt="Fuentes Concrete team at job site"
@@ -46,9 +54,34 @@ export default function Hiring() {
               loading="lazy"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
-          </div>
+          </button>
         </div>
       </div>
+
+      {/* Lightbox */}
+      {lightboxOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm"
+          onClick={() => setLightboxOpen(false)}
+        >
+          <button
+            onClick={() => setLightboxOpen(false)}
+            className="absolute top-4 right-4 p-2 text-white/70 hover:text-white transition-colors"
+            aria-label="Close"
+          >
+            <X className="h-8 w-8" />
+          </button>
+          <div className="relative w-[90vw] h-[90vh]">
+            <Image
+              src="/images/hiring-pic.png"
+              alt="Fuentes Concrete team at job site"
+              fill
+              className="object-contain"
+              sizes="90vw"
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 }

@@ -14,7 +14,7 @@ export default function Footer() {
               alt="Fuentes Concrete Inc."
               className="h-10 w-auto mb-4"
             />
-            <p className="text-white/50 text-sm leading-relaxed">
+            <p className="text-white/80 text-sm leading-relaxed">
               Family owned and operated located in Madera, California.
               Servicing the Central Valley in custom concrete work. We serve
               Madera, Fresno, Clovis, Visalia, Merced, Modesto, Bass Lake and
@@ -24,7 +24,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-white/40 mb-4">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-lime mb-4">
               Services
             </h3>
             <nav className="flex flex-col gap-2">
@@ -32,7 +32,7 @@ export default function Footer() {
                 <Link
                   key={service.slug}
                   href={`/services/${service.slug}`}
-                  className="text-white/50 hover:text-lime text-sm transition-colors"
+                  className="text-white/80 hover:text-lime text-sm transition-colors"
                 >
                   {service.title}
                 </Link>
@@ -42,31 +42,31 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-white/40 mb-4">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-lime mb-4">
               Quick Links
             </h3>
             <nav className="flex flex-col gap-2">
               <Link
                 href="/#about"
-                className="text-white/50 hover:text-lime text-sm transition-colors"
+                className="text-white/80 hover:text-lime text-sm transition-colors"
               >
                 About Us
               </Link>
               <Link
                 href="/services"
-                className="text-white/50 hover:text-lime text-sm transition-colors"
+                className="text-white/80 hover:text-lime text-sm transition-colors"
               >
                 All Services
               </Link>
               <Link
                 href="/#hiring"
-                className="text-white/50 hover:text-lime text-sm transition-colors"
+                className="text-white/80 hover:text-lime text-sm transition-colors"
               >
                 Careers
               </Link>
               <Link
                 href="/#contact"
-                className="text-white/50 hover:text-lime text-sm transition-colors"
+                className="text-white/80 hover:text-lime text-sm transition-colors"
               >
                 Contact
               </Link>
@@ -75,22 +75,22 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-white/40 mb-4">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-lime mb-4">
               Contact Info
             </h3>
             <div className="space-y-3">
               <a
                 href="tel:5596736444"
-                className="flex items-center gap-2 text-white/50 hover:text-lime text-sm transition-colors"
+                className="flex items-center gap-2 text-white/80 hover:text-lime text-sm transition-colors"
               >
                 <Phone className="h-4 w-4 text-lime" />
                 (559) 673-6444
               </a>
-              <p className="flex items-center gap-2 text-white/50 text-sm">
+              <p className="flex items-center gap-2 text-white/80 text-sm">
                 <Printer className="h-4 w-4 text-lime" />
                 (559) 674-0377
               </p>
-              <p className="flex items-start gap-2 text-white/50 text-sm">
+              <p className="flex items-start gap-2 text-white/80 text-sm">
                 <MapPin className="h-4 w-4 text-lime shrink-0 mt-0.5" />
                 2370 W Cleveland Ave Ste. 108 #141
                 <br />
@@ -101,17 +101,17 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-white/30 text-sm">
+          <p className="text-white/60 text-sm">
             &copy; {new Date().getFullYear()} Fuentes Concrete Inc. All rights
             reserved.
           </p>
-          <p className="text-white/30 text-sm">
+          <p className="text-white/60 text-sm">
             Built by{" "}
             <a
               href="https://caltechweb.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-lime/60 hover:text-lime transition-colors"
+              className="text-lime hover:text-lime-light transition-colors"
             >
               CalTech Web
             </a>

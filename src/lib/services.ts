@@ -32,7 +32,7 @@ export const services: Service[] = [
     title: "Concrete Driveways",
     shortDescription:
       "Durable, custom concrete driveways built to last. From plain gray to stamped and colored finishes.",
-    image: "/images/g1.jpg",
+    image: "/images/driveway.jpg",
     metaTitle: "Concrete Driveways Madera & Fresno CA | Fuentes Concrete Inc.",
     metaDescription:
       "Custom concrete driveway installation in Madera, Fresno, Clovis & the Central Valley. 25+ years experience. Stamped, colored & standard finishes. Call (559) 673-6444.",
@@ -65,7 +65,7 @@ export const services: Service[] = [
     title: "Concrete Patios & Pool Decks",
     shortDescription:
       "Custom patios and pool decks that transform your outdoor living space with style and function.",
-    image: "/images/hiring-pic.png",
+    image: "/images/patio-pool-deck.jpg",
     metaTitle: "Concrete Patios & Pool Decks Madera CA | Fuentes Concrete Inc.",
     metaDescription:
       "Custom concrete patios and pool decks in Madera, Fresno & Central Valley. Stamped, decorative & standard finishes. 25+ years experience. Call (559) 673-6444.",

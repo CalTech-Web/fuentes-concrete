@@ -135,12 +135,12 @@ export default async function ServicePage({ params }: Props) {
             </div>
 
             <div>
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 mb-8">
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 mb-8 bg-charcoal">
                 <Image
                   src={service.image}
                   alt={service.title}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
 
@@ -243,12 +243,12 @@ export default async function ServicePage({ params }: Props) {
                 href={`/services/${s.slug}`}
                 className="group bg-charcoal-light rounded-2xl overflow-hidden border border-white/10 hover:border-lime/30 transition-colors"
               >
-                <div className="relative aspect-[16/10] overflow-hidden">
+                <div className="relative aspect-[16/10] overflow-hidden bg-charcoal">
                   <Image
                     src={s.image}
                     alt={s.title}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-contain transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-5">

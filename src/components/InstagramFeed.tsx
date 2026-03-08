@@ -1,33 +1,24 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { Instagram } from "lucide-react";
 
+const images = [
+  { src: "/images/driveway.jpg", alt: "Concrete driveway project" },
+  { src: "/images/patio-pool-deck.jpg", alt: "Patio and pool deck project" },
+  { src: "/images/g1.jpg", alt: "Stamped concrete project" },
+  { src: "/images/foundation.jpg", alt: "Concrete foundation project" },
+  { src: "/images/g3.jpg", alt: "Decorative concrete work" },
+  { src: "/images/retaining-wall.jpg", alt: "Retaining wall project" },
+  { src: "/images/cta-project.jpg", alt: "Concrete slab with steps" },
+  { src: "/images/g2.jpg", alt: "Sidewalk and walkway project" },
+  { src: "/images/g4.jpg", alt: "Commercial concrete project" },
+  { src: "/images/hiring-pic.png", alt: "Concrete patio project" },
+];
+
 export default function InstagramFeed() {
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    // Load Instagram embed script
-    const script = document.createElement("script");
-    script.src = "https://www.instagram.com/embed.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    script.onload = () => {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      const win = window as any;
-      if (win.instgrm) {
-        win.instgrm.Embeds.process();
-      }
-    };
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
-    <section className="py-20 sm:py-28 bg-charcoal-dark">
+    <section className="py-20 sm:py-28 bg-charcoal-dark overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <p className="text-lime font-semibold uppercase tracking-widest text-sm mb-3">
@@ -41,33 +32,39 @@ export default function InstagramFeed() {
             Concrete Inc.
           </p>
         </div>
+      </div>
 
-        {/* Instagram Profile Embed — auto-updates with new posts */}
-        <div
-          ref={containerRef}
-          className="flex justify-center overflow-hidden rounded-2xl border border-white/10"
+      {/* Infinite scrolling carousel — full width */}
+      <div className="group relative w-full overflow-hidden">
+        <div className="flex animate-scroll group-hover:[animation-play-state:paused]">
+          {/* Render images twice for seamless loop */}
+          {[...images, ...images].map((img, i) => (
+            <div
+              key={i}
+              className="relative shrink-0 w-72 sm:w-80 md:w-96 aspect-square mx-2 rounded-2xl overflow-hidden border border-white/10"
+            >
+              <Image
+                src={img.src}
+                alt={img.alt}
+                fill
+                className="object-cover transition-transform duration-500 hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black/20 hover:bg-black/0 transition-colors" />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="text-center mt-12">
+        <a
+          href="https://www.instagram.com/fuentesconcreteinc"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 bg-lime text-charcoal-dark px-6 py-3 rounded-xl font-bold hover:bg-lime-light transition-colors"
         >
-          <iframe
-            src="https://www.instagram.com/fuentesconcreteinc/embed"
-            className="w-full max-w-4xl border-0"
-            style={{ minHeight: "600px" }}
-            allowTransparency
-            scrolling="no"
-            title="Fuentes Concrete Instagram Feed"
-          />
-        </div>
-
-        <div className="text-center mt-8">
-          <a
-            href="https://www.instagram.com/fuentesconcreteinc"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-lime text-charcoal-dark px-6 py-3 rounded-xl font-bold hover:bg-lime-light transition-colors"
-          >
-            <Instagram className="h-5 w-5" />
-            Follow @fuentesconcreteinc
-          </a>
-        </div>
+          <Instagram className="h-5 w-5" />
+          Follow @fuentesconcreteinc
+        </a>
       </div>
     </section>
   );

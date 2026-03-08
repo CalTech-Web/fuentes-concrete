@@ -130,12 +130,12 @@ export default async function ServicePage({ params }: Props) {
             </div>
 
             <div>
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 mb-8 bg-charcoal">
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 mb-8">
                 <Image
                   src={service.image}
                   alt={service.title}
                   fill
-                  className="object-contain"
+                  className="object-cover"
                 />
               </div>
 

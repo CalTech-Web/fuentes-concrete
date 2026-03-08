@@ -131,7 +131,7 @@ export const services: Service[] = [
     title: "Concrete Foundations",
     shortDescription:
       "Solid, code-compliant foundations for residential and commercial construction projects.",
-    image: "/images/bg1.png",
+    image: "/images/foundation.jpg",
     metaTitle: "Concrete Foundations Madera & Fresno CA | Fuentes Concrete Inc.",
     metaDescription:
       "Residential and commercial concrete foundations in Madera, Fresno & Central Valley. Slab-on-grade, stem walls & footings. 25+ years. Call (559) 673-6444.",

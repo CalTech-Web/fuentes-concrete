@@ -37,12 +37,12 @@ export default function Hiring() {
             </a>
           </div>
 
-          <div className="relative aspect-square rounded-2xl overflow-hidden border border-white/10">
+          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10">
             <Image
               src="/images/hiring-pic.png"
-              alt="Custom decorative concrete patio work by Fuentes Concrete"
+              alt="Fuentes Concrete team at job site"
               fill
-              className="object-cover"
+              className="object-cover object-center"
               loading="lazy"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />

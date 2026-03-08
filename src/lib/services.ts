@@ -230,7 +230,7 @@ export const services: Service[] = [
     title: "Commercial Concrete",
     shortDescription:
       "Large-scale commercial concrete work for buildings, parking lots, warehouses, and more.",
-    image: "/images/fuentes-company.png",
+    image: "/images/commercial.jpg",
     metaTitle: "Commercial Concrete Contractor Madera & Fresno CA | Fuentes Concrete Inc.",
     metaDescription:
       "Commercial concrete contractor serving Madera, Fresno, Sacramento & Central Valley. Tilt-up, parking lots, warehouse slabs & more. Call (559) 673-6444.",
